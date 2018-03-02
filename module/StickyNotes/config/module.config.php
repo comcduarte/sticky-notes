@@ -1,15 +1,19 @@
 <?php 
 namespace StickyNotes;
 
-use Zend\Router\Http\Literal;
+use Zend\Router\Http\Segment;
 
 return [
     'router' => [
         'routes' => [
             'stickynotes' => [
-                'type' => Literal::class,
+                'type' => Segment::class,
                 'options' => [
-                    'route' => '/stickynotes',
+                    'route' => '/stickynotes[/:action][/:id]',
+                    'constraints' => [
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id' => '[0-9]+',
+                    ],
                     'defaults' => [
                         'controller' => Controller\StickyNotesController::class,
                         'action' => 'index',

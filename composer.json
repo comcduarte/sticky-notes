@@ -19,7 +19,8 @@
 		"phpunit/phpunit" : "*",
 		"zendframework/zend-test" : "*",
 		"zendframework/zend-db" : "*",
-		"zendframework/zend-form" : "*"
+		"zendframework/zend-form" : "*",
+		"zendframework/zend-json" : "*"
 	},
 	"autoload" : {
 		"psr-4" : {
