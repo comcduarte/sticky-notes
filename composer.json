@@ -17,7 +17,9 @@
 		"zendframework/zend-mvc" : "^3.0.1",
 		"zfcampus/zf-development-mode" : "^3.0",
 		"phpunit/phpunit" : "*",
-		"zendframework/zend-test" : "*"
+		"zendframework/zend-test" : "*",
+		"zendframework/zend-db" : "*",
+		"zendframework/zend-form" : "*"
 	},
 	"autoload" : {
 		"psr-4" : {

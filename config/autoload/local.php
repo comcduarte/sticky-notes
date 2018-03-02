@@ -12,4 +12,8 @@
  */
 
 return [
+//     'db' => [
+//         'username' => 'sticky-notes-usr',
+//         'password' => 'sticky-notes-password',
+//     ],
 ];

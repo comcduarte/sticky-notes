@@ -15,6 +15,9 @@ class StickyNotesControllerFactory implements FactoryInterface
      */
     public function __invoke(ContainerInterface $container, $requestedName, array $options = null)
     {
-        return new StickyNotesController();
+        $controller = new StickyNotesController($container->get('model-primary-adapter'));
+        $controller->setStickyNotesTable($container->get('sticky-notes-table'));
+        
+        return $controller;
     }
 }

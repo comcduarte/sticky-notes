@@ -12,5 +12,8 @@
  */
 
 return [
-    // ...
+//     'db' => [
+//         'driver' => 'PDO',
+//         'dsn' => 'mysql:dbname=sticky-notes;host=it-webdb01.midnet.cityofmiddletown.com;charset=utf8',
+//     ],
 ];
